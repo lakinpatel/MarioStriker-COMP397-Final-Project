@@ -64,7 +64,7 @@ function preload() {
 function handleFileProgress(event) {
     'use strict';
     progressText.text = (managers.Assets.loader.progress * 100 | 0) + " % Loaded";
-    progressBar.graphics.beginFill("#FF" + Math.floor(Math.random() * 100).toString() + "B10").drawRect(100, stage.canvas.height / 1.2, 500 * managers.Assets.loader.progress, 50);
+    //progressBar.graphics.beginFill("#FF" + Math.floor(Math.random() * 100).toString() + "B10").drawRect(100, stage.canvas.height / 1.2, 500 * managers.Assets.loader.progress, 50);
 }
 
 // init called after Assets have been loaded.
