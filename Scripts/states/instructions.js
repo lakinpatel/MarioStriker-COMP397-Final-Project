@@ -76,12 +76,13 @@ var states, interval, createjs, stage, game, constants, currentState, currentSta
         game.addChild(gameNameLabel);
         
         // Display Game Instruction text
-        instructionText = new objects.Label(40, stage.canvas.height / 2 + 40,
-                                            "You are being hunted by your own kind and you need to escape. " +
-                                            "\nFind earth while keeping yourself alive." +
-                                            "\nDodge the barrage of lasers by moving the mouse around." +
-                                            "\n\nCollect powerups                 for extra score. " +
-                                            "\nLeft click to shoot enemies after level 1.");
+        instructionText = new objects.Label(40, stage.canvas.height / 2,
+							"Level 1 : Stay away of Swords by moving your mouse and Collect the Energy Boosts to Score more. " +
+							"\n\nLevel 2 and up : Left click to shoot enemies after level 1." +
+							"\n                        You have to be aware of your own kind of big Devils and you need to escape. " +
+							"\n\nLevel 3: You have to face both enemies swords and devils of your own type " +
+							"\n\nCollect powerups                 for extra score."+
+							"\n\nEach Boost will give you 100 points.");
         instructionText.regX = 0;
         instructionText.regY = 0;
         instructionText.font = "15px Audiowide";

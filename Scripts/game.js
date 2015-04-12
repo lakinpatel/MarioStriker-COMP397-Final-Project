@@ -1,4 +1,12 @@
+/*
+Name : 				Lakinkumar Patel
+					Rishabh Shukla
+Game Name : 		Mario Striker
+File Name : 		game.js
+Github User Name : 	lakinpatel
+					rishabhshukla12
 
+*/
 
 /// <reference path="constants.js" />
 /// <reference path="managers/asset.js" />
