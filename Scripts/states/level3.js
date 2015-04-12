@@ -67,7 +67,7 @@ var count, constants, console, scoreboard, button, laser, coin, enemy, label, sp
         scoreboard = new objects.Scoreboard(stage, game);
         // Instantiate Collision Manager
         collision = new managers.Collision(plane, coin, lasers, scoreboard, enemies, plane.bullets);
-        surviveText = new objects.Label(stage.canvas.width / 1.4, stage.canvas.height / 1.2, "Survive! \nGet 5 Energy Boosts \nfor more life!");
+        surviveText = new objects.Label(stage.canvas.width / 1.4, stage.canvas.height / 2, "Survive! \nGet 5 Energy Boosts \nfor more life!");
         surviveText.font = "bold 40px Wallpoet";
         surviveText.textAlign = "center";
         surviveText.shadow = new createjs.Shadow("#000000", 5, 5, 5);
