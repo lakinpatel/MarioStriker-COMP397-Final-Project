@@ -64,7 +64,7 @@ var states, space, plane, count, bullets, coin, constants, lasers, collision, sc
         enemy = new objects.Enemy(stage, game);
         plane = new objects.Plane(stage, game);
        
-        stageLabel = new objects.Label(stage.canvas.width / 1.4, stage.canvas.height / 2, "Collect " + constants.COINSCOLLECTED.toString() + " powerups!");
+        stageLabel = new objects.Label(stage.canvas.width / 1.4, stage.canvas.height / 1.5, "Collect " + constants.COINSCOLLECTED.toString() + " Energy Boosts!");
         stageLabel.font = "bold 40px Wallpoet";
         stageLabel.textAlign = "center";
         stageLabel.shadow = new createjs.Shadow("#000000", 5, 5, 5);
