@@ -4,7 +4,7 @@ var managers;
     var spriteSheetData, spriteSheetData2, spriteSheetData3, spriteSheetData4, assetManifest, Assets;
     // Image and Sound Manifest;
     assetManifest = [
-        { id: "stars", src: "assets/images/space5.jpg" },
+        { id: "level1_bg", src: "assets/images/blue.jpg" },
         { id: "laser", src: "assets/images/beam.png" },
         //made in http://www.bfxr.net/
         { id: "shipHit", src: "assets/sounds/shipHit.wav" },
@@ -12,7 +12,9 @@ var managers;
         { id: "coinSound", src: "assets/sounds/Pickup_Coin24.wav" },
          //credits to: http://www.tannerhelland.com
         { id: "gameOver", src: "assets/sounds/Nevermore.mp3" },
-        { id: "gameMusic", src: "assets/sounds/WildWaters.mp3" }
+        { id: "gameMusic", src: "assets/sounds/WildWaters.mp3" },
+		{ id: "level2_bg", src: "assets/images/water.jpg"},
+        { id: "level3_bg", src: "assets/images/forest.jpg" }
     ];
     
     // SpriteSheet Data Object
@@ -31,7 +33,7 @@ var managers;
             "mainMenuButton": [3]
         }
     };
-    
+	
     spriteSheetData2 = {
         "images": ["assets/images/ship2.png"],
         "frames": [

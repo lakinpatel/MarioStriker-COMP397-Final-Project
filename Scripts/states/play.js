@@ -4,6 +4,8 @@
 /// <reference path="../objects/enemy.js" />
 /// <reference path="../objects/label.js" />
 /// <reference path="../objects/space.js" />
+/// <reference path="../objects/water.js" />
+/// <reference path="../objects/forest.js" />
 /// <reference path="../objects/plane.js" />
 /// <reference path="../objects/bullet.js" />
 /// <reference path="../objects/scoreboard.js" />
@@ -64,7 +66,7 @@ var states, space, plane, count, bullets, coin, constants, lasers, collision, sc
         enemy = new objects.Enemy(stage, game);
         plane = new objects.Plane(stage, game);
        
-        stageLabel = new objects.Label(stage.canvas.width / 1.4, stage.canvas.height / 1.5, "Collect " + constants.COINSCOLLECTED.toString() + " Energy Boosts!");
+        stageLabel = new objects.Label(stage.canvas.width / 1.4, stage.canvas.height / 2, "Collect " + constants.COINSCOLLECTED.toString() + " powerups!");
         stageLabel.font = "bold 40px Wallpoet";
         stageLabel.textAlign = "center";
         stageLabel.shadow = new createjs.Shadow("#000000", 5, 5, 5);

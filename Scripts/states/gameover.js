@@ -7,8 +7,8 @@
 /// <reference path="../objects/plane.js" />
 /// <reference path="../objects/scoreboard.js" />
 var objects, states, space, createjs, stage, game, currentState, currentStateFunction, constants,
-    changeState, interval, plane, scoreboard, tryAgain, mainMenuButton;
-var finalScore;
+    changeState, interval, plane, scoreboard, tryAgain, mainMenuButton,finalScore;
+//var finalScore;
 (function (states) {
     "use strict";
     function gameOverState() {

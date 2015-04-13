@@ -14,6 +14,8 @@ Github User Name : 	lakinpatel
 /// <reference path="objects/coin.js" />
 /// <reference path="objects/enemy.js" />
 /// <reference path="objects/space.js" />
+/// <reference path="objects/water.js" />
+/// <reference path="objects/forest.js" />
 /// <reference path="objects/plane.js" />
 /// <reference path="objects/scoreboard.js" />
 /// <reference path="objects/label.js" />
@@ -27,8 +29,8 @@ Github User Name : 	lakinpatel
 /// <reference path="states/gameover.js" />
 /// <reference path="states/instructions.js" />
 
-// Combatron - Added basic state machine structure - Added Button and Label classes
-var stage, game, space, bullet, plane, coin, enemy;
+// Mario Striker - Added basic state machine structure - Added Button and Label classes
+var stage, game, space, water, bullet, plane, coin, enemy;
 var lasers = [], enemies = [],  explosions = [], console, optimizeForMobile;
 var scoreboard, collision, tryAgain, playButton, currentState;
 var currentStateFunction, constants, changeState, createjs, progressText, managers;

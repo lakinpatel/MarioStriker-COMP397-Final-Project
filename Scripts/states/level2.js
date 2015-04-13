@@ -4,16 +4,18 @@
 /// <reference path="../objects/enemy.js" />
 /// <reference path="../objects/label.js" />
 /// <reference path="../objects/space.js" />
+/// <reference path="../objects/water.js" />
 /// <reference path="../objects/plane.js" />
 /// <reference path="../objects/scoreboard.js" />
 /// <reference path="../managers/collision.js" />
 var states;
-var count, constants, console, scoreboard, button, laser, coin, enemy, label, space, plane, collision, enemies,
+var count, constants, console, scoreboard, button, laser, coin, enemy, label, space, plane, collision, enemies, water,
     stage, game, currentState, currentStateFunction, changeState, createjs, objects, managers, count, lasers, gameObjective;
 (function (states) {
     'use strict';
     function level2State() {
-        space.update();
+        water.update();
+        //space.update();
         plane.update();
         scoreboard.update();
         setTimeout(function () {
@@ -54,7 +56,9 @@ var count, constants, console, scoreboard, button, laser, coin, enemy, label, sp
         // Declare new Game Container
         game = new createjs.Container();
         // Instantiate Game Objects
-        space = new objects.Space(stage, game);
+        //space = new objects.Space(stage, game); //commented for new bg
+		console.log(objects);
+		water = new objects.Water(stage, game);
         coin = new objects.Coin(stage, game);
         enemy = new objects.Enemy(stage, game);
         plane = new objects.Plane(stage, game);
@@ -67,7 +71,7 @@ var count, constants, console, scoreboard, button, laser, coin, enemy, label, sp
         scoreboard = new objects.Scoreboard(stage, game);
         // Instantiate Collision Manager
         collision = new managers.Collision(plane, coin, lasers, scoreboard, enemies, plane.bullets);
-        gameObjective = new objects.Label(stage.canvas.width / 1.4, stage.canvas.height / 2, "Kill " + constants.ENEMIESKILLED.toString() + " Devils ships!");
+        gameObjective = new objects.Label(stage.canvas.width / 1.4, stage.canvas.height / 2, "Destroy " + constants.ENEMIESKILLED.toString() + " enemy ships!");
         gameObjective.font = "bold 40px Wallpoet";
         gameObjective.textAlign = "center";
         gameObjective.shadow = new createjs.Shadow("#000000", 5, 5, 5);
