@@ -13,7 +13,7 @@ var objects, createjs, managers, stage, game;
             this.height = this.image.getBounds().height;
             this.image.regX = this.width;
             this.reset();
-            this.dx = 8;
+            this.dx = 5;
 
             game.addChild(this.image);
         }
