@@ -51,7 +51,7 @@ var states, interval, createjs, stage, game, constants, currentState, currentSta
         }
         
         powerup.image.y = stage.canvas.height / 1.5 + 15;
-        powerup.image.x = stage.canvas.width/2 - 385;
+        powerup.image.x = stage.canvas.width/2 - 205;
     }
     states.instructionState = instructionState;
 
