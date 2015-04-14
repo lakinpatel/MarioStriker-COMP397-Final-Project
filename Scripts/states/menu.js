@@ -37,8 +37,8 @@ var states, createjs, stage, game, plane, space, instructionButton, currentState
     function menuState() {
         space.update();
         plane.image.y = stage.canvas.height / 2;
-        plane.image.x = 430;
-        gameNameLabel.color = "#FF" + Math.floor(Math.random() * 10).toString() + "B10";
+        plane.image.x = 250;
+        gameNameLabel.color = "#FF" + Math.floor(Math.random() * 10).toString() + "F01";
         
     }
     states.menuState = menuState;
